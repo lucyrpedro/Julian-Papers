@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=latex 2019.4.10)  28 APR 2019 16:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=latex 2019.4.10)  28 APR 2019 17:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -146,6 +146,8 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ] [2
 
+] [3
+
 ]
 (./papers.aux) ) 
 Here is how much of TeX's memory you used:
@@ -157,4 +159,4 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  24i,7n,31p,190b,221s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on papers.dvi (2 pages, 2248 bytes).
+Output written on papers.dvi (3 pages, 3700 bytes).

@@ -31,6 +31,7 @@ systems. Simulation provides upper bounds of expected
 performance and helps to assess observed performance
 as potential performance gains of optimizations can be
 approximated.
+
 In this paper the environment is introduced and
 several examples depict how it assists to reveal internal behavior and spot bottlenecks. In an example with
 PVFS the inefficient write-out of a matrix diagonal
@@ -39,6 +40,25 @@ behavior or by simulation. Additionally the simulation
 showed that in theory the operation should finish 20
 times faster on our cluster - by applying correct MPI
 hints this potential could be exploited.
+
+\clearpage
+
+\section{Towards an Energy-Aware Scientific I/O Interface}
+
+Intelligently switching energy saving modes
+of CPUs, NICs and disks is mandatory to reduce the
+energy consumption. 
+
+Hardware and operating system have a limited perspective of future performance demands, thus automatic
+control is suboptimal. However, it is tedious for a developer to control the hardware by himself.
+
+In this paper we propose an extension of an existing I/O interface which on the one hand is easy to use
+and on the other hand could steer energy saving modes
+more efficiently. Furthermore, the proposed modifications are beneficial for performance analysis and provide even more information to the I/O library to improve performance.
+
+When a user annotates the program with the proposed interface, I/O, communication and computation
+phases are labeled by the developer. Run-time behavior is then characterized for each phase, this knowledge
+could be then exploited by the new library.
 
 \clearpage
 
