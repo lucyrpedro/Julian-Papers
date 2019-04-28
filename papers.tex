@@ -1,8 +1,9 @@
-\documentclass[11pt]{article}
+\documentclass[a4paper,14pt]{extarticle}
+\usepackage[hmargin=2cm,vmargin=2cm,bmargin=3cm]{geometry}
+% \usepackage{geometry}
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{marvosym}
-\usepackage[hmargin=2cm,vmargin=2cm,bmargin=3cm]{geometry}
 \usepackage{color}
 \usepackage{comment}
 
@@ -18,10 +19,14 @@
 
 \maketitle
 
+\parskip = 25pt
+\baselineskip = 20pt
+
 \clearpage
 
 \section{HDTrace - A Tracing and Simulation Environment of Application and System Interaction}
 
+\espaco
 HDTrace is an environment which allows to
 trace and simulate the behavior of MPI programs on a
 cluster. It explicitly includes support to trace internals
@@ -39,12 +44,15 @@ could be either identified by inspecting the PVFS server
 behavior or by simulation. Additionally the simulation
 showed that in theory the operation should finish 20
 times faster on our cluster - by applying correct MPI
-hints this potential could be exploited.
+hints this potential could be exploited.\\[1cm]
+
+{\bf Comments}
 
 \clearpage
 
 \section{Towards an Energy-Aware Scientific I/O Interface}
 
+\espaco
 Intelligently switching energy saving modes
 of CPUs, NICs and disks is mandatory to reduce the
 energy consumption. 
@@ -58,8 +66,46 @@ more efficiently. Furthermore, the proposed modifications are beneficial for per
 
 When a user annotates the program with the proposed interface, I/O, communication and computation
 phases are labeled by the developer. Run-time behavior is then characterized for each phase, this knowledge
-could be then exploited by the new library.
+could be then exploited by the new library.\\[1cm]
+
+{\bf \large Comments} 
+
+\begin{itemize}
+
+\item Several best practices are realized within the ADIOS library to increase usability and performance, for instance aggressive write-behind is performed, and MPI collectives transfer file information to decrease the burden on metadata servers.
+
+\item Available modules include NetCDF, HDF5, MPI (collective or independent), POSIX and several asynchronous staging modules.
+
+\end{itemize}
 
 \clearpage
+
+\section{Simulating Parallel Programs on Application and System Level}
+
+\espaco
+Understanding the measured performance
+of parallel applications in real systems is difficult - with
+the aim to utilize the resources available, optimizations
+deployed in hardware and software layers build up to
+complex systems. However, in order to identify bottlenecks the performance must be assessed.
+
+This paper introduces PIOsimHD, an event-driven
+simulator for MPI-IO applications and the underlying
+(heterogeneous) cluster computers. With the help of
+the simulator runs of MPI-IO applications can be conducted in-silico; this includes detailed simulation of collective communication patterns as well as simulation of
+parallel I/O. The simulation estimates upper bounds
+for expected performance and helps assessing observed
+performance.
+
+Together with HDTrace, an environment which allows tracing the behavior of MPI programs and internals of MPI and PVFS, PIOsimHD enables us to localize inefficiencies, to conduct research on optimizations
+for communication algorithms, and to evaluate arbitrary and future systems. In this paper the simulator is
+introduced and an excerpt of the conducted validation
+is presented, which demonstrates the accuracy of the
+models for our cluster.\\[1cm]
+
+{\bf \large Comments} 
+
+\clearpage
+
 
 \end{document}
