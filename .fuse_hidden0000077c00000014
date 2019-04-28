@@ -8,9 +8,11 @@
 
 \newcommand{\espaco}{\hspace{16pt}}
 
-\title{\espaco\\[3cm] \huge Julian Kunkel's Papers\\[5cm]}
+\espaco\\[3cm]
 
-\author{\LARGE Title and Abstract\\[3cm]}
+\title{\huge Julian Kunkel's Papers\\[5cm]}
+
+\author{\LARGE Title and Abstract\\[0.5cm]}
 
 \date{\today}
 		
@@ -20,9 +22,10 @@
 
 \clearpage
 
-\section{HDTrace - A Tracing and Simulation Environment of Application and System Interaction}
+\section{HDTrace ?- A Tracing and Simulation Environment of
+Application and System Interaction}
 
-HDTrace is an environment which allows to
+Abstract HDTrace is an environment which allows to
 trace and simulate the behavior of MPI programs on a
 cluster. It explicitly includes support to trace internals
 of MPICH2 and the parallel file system PVFS. With
@@ -37,9 +40,29 @@ PVFS the inefficient write-out of a matrix diagonal
 could be either identified by inspecting the PVFS server
 behavior or by simulation. Additionally the simulation
 showed that in theory the operation should finish 20
-times faster on our cluster - by applying correct MPI
+times faster on our cluster ? by applying correct MPI
 hints this potential could be exploited.
 
 \clearpage
+
+\section{1}
+
+
+
+\clearpage
+
+\section{1}
+
+
+
+\clearpage
+
+\section{1}
+
+
+
+\clearpage
+
+
 
 \end{document}
